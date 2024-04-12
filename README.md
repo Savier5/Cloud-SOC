@@ -11,3 +11,27 @@ Within the realm of Azure Sentinel, I crafted workbooks, leveraging pre-built JS
 Moreover, I established analytics rules within Azure Sentinel to systematically identify potential security breaches. These rules underwent rigorous testing via simulated attacks, ensuring their efficacy in identifying and mitigating security incidents promptly.
 
 Throughout this project, the underlying emphasis was consistently placed on the pivotal role of comprehensive logging and monitoring. This robust framework serves as the cornerstone of our cybersecurity strategy, enabling us to promptly detect and respond to potential threats in a proactive manner. As a result of these concerted efforts, we stand better equipped to safeguard digital assets and combat evolving cyber threats effectively.
+
+
+BEFORE SECURING ENVIRONMENT:
+	
+Start Time	2024-04-11T00:42:16.7427788Z
+Stop Time	2024-04-12T00:42:16.7427788Z
+
+
+Security Events (Windows VMs):	121420
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/5f1efa75-bc08-42bc-8c6a-24113216e574)
+
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/333d9746-aea9-44fa-a18b-8f730963fbca)
+
+Syslog (Linux VMs):	3407
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/ed35d8e7-8acb-4785-a304-7407b1b0ce0b)
+
+SecurityAlert (Microsoft Defender for Cloud):	6
+
+SecurityIncident (Sentinel Incidents):	241
+
+NSG Inbound Malicious Flows Allowed:	1898
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/65117322-abdb-4cf4-a618-e6a1076b3be3)
+
+
