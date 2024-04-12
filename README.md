@@ -13,11 +13,10 @@ Moreover, I established analytics rules within Azure Sentinel to systematically 
 Throughout this project, the underlying emphasis was consistently placed on the pivotal role of comprehensive logging and monitoring. This robust framework serves as the cornerstone of our cybersecurity strategy, enabling us to promptly detect and respond to potential threats in a proactive manner. As a result of these concerted efforts, we stand better equipped to safeguard digital assets and combat evolving cyber threats effectively.
 
 
-BEFORE SECURING ENVIRONMENT:
+## BEFORE SECURING ENVIRONMENT:
 	
 Start Time	2024-04-11T00:42:16.7427788Z
 Stop Time	2024-04-12T00:42:16.7427788Z
-
 
 Security Events (Windows VMs):	121420
 ![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/5f1efa75-bc08-42bc-8c6a-24113216e574)
