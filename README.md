@@ -16,21 +16,22 @@ Throughout this project, the underlying emphasis was consistently placed on the 
 ## Before Securing Environment:
 	
 Start Time: 2024-04-11T00:42:16.7427788Z
+
 Stop Time: 2024-04-12T00:42:16.7427788Z
 
-Security Events (Windows VMs):	121420
+Security Events (Windows VMs): 121420
 ![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/5f1efa75-bc08-42bc-8c6a-24113216e574)
 
 ![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/333d9746-aea9-44fa-a18b-8f730963fbca)
 
-Syslog (Linux VMs):	3407
+Syslog (Linux VMs): 3407
 ![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/ed35d8e7-8acb-4785-a304-7407b1b0ce0b)
 
-SecurityAlert (Microsoft Defender for Cloud):	6
+SecurityAlert (Microsoft Defender for Cloud): 6
 
-SecurityIncident (Sentinel Incidents):	241
+SecurityIncident (Sentinel Incidents): 241
 
-NSG Inbound Malicious Flows Allowed:	1898
+NSG Inbound Malicious Flows Allowed: 1898
 ![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/65117322-abdb-4cf4-a618-e6a1076b3be3)
 
 
