@@ -1,4 +1,4 @@
-# Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics
+# Running Insecure Environment for 24 Hours and Capture Analytics
 
 In the course of this Azure lab project, my primary focus revolved around fortifying the digital infrastructure while simultaneously exploring potential vulnerabilities. Initially, I initiated the process by establishing the lab account and subscription, followed by the deployment of virtual machines (VMs) encompassing both Windows and Linux operating systems. These foundational steps laid the groundwork for our subsequent security measures.
 
