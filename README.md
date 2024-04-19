@@ -56,8 +56,11 @@ For my first one, I did the Brute Force SUCCESS incident for Windows, and after 
 
 Step 3 is where I would take action. I would containing the incident to prevent further damage, eradicating any threats, and then focusing on recovery. I followed a simple Incident Response PlayBook similar to the NIST 800-61 to guide me through this process, ensuring that I am taking the right steps to get things back to normal as quickly as possible.
 
+In this step, I accessed the virtual machine (VM) and modified the network settings. Specifically, I adjusted the inbound port rule to mitigate potential risks by restricting access to traffic originating solely from my designated public IP address. Subsequently, I removed any configuration that exposed the VM to public visibility.
+
 Finally, in Step 4, it's all about documentation and closure. I documented my findings and any important information I gathered throughout the incident response process. Once everything is under control and resolved, I would close out the incident in Sentinel, making sure to dot our i's and cross our t's.
 
 ![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/98090bfd-e9bb-4346-82fc-8f02a469d45b)
 
 So, that's my incident response journey in a nutshell. It's all about being prepared, staying vigilant, and taking swift and decisive action when needed.
+
