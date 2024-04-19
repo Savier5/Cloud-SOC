@@ -34,4 +34,30 @@ SecurityIncident (Sentinel Incidents): 241
 NSG Inbound Malicious Flows Allowed: 1898
 ![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/65117322-abdb-4cf4-a618-e6a1076b3be3)
 
+## Break down of my incident response process:
 
+While Azure provides fantastic automation tools that can simplify many incident response tasks, it's valuable to practice manual incident handling to refine my skills in dealing with various scenarios.
+
+Step 1 is all about preparation. I already did this by getting all our logs into Log Analytics Workspace and Sentinel. Plus, I've set up our alert rules to make sure we're notified of any potential issues.
+
+Now, in Step 2, we're diving into detection and analysis. This is where things get interesting. We'll be dealing with different alerts and incidents, each requiring a tailored approach. I started by assigning severity levels, statuses, and owners to each incident. Then, I delved into the nitty-gritty details using the new experience feature, which gave me a comprehensive view of what was going on. 
+
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/72d71e7c-3c56-4031-9624-35a2d4acddd5)
+
+I was keeping a close eye on the activity logs to trace the history of each incident. And it's not just about the logs; I was also looking at entities and incident timelines to see if there are any unusual patterns or activities. 
+
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/2f880238-4a36-4cf3-9b1a-618ffb47873a)
+
+This is where I rolled up my "sleeves" and really investigated. I trying to determine the scope of the incident and whether it's a true positive or a false positive. If it's the real deal, I would move forward; if not, I would close it.
+
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/61ca6142-c2be-46a1-99e6-958093cece90)
+
+For my first one, I did the Brute Force SUCCESS incident for Windows, and after writing quires and searching if the incident was correct. I found out that the incidents seemed to be a false positive. I inspected actions that were taken by the "attacker", and upon further investigation, it was found that the alerts raised were created by the service account. The "attacker" continued to fail to log in afterwards the successful "log in" alert. 
+
+Step 3 is where I would take action. I would containing the incident to prevent further damage, eradicating any threats, and then focusing on recovery. I followed a simple Incident Response PlayBook similar to the NIST 800-61 to guide me through this process, ensuring that I am taking the right steps to get things back to normal as quickly as possible.
+
+Finally, in Step 4, it's all about documentation and closure. I documented my findings and any important information I gathered throughout the incident response process. Once everything is under control and resolved, I would close out the incident in Sentinel, making sure to dot our i's and cross our t's.
+
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/98090bfd-e9bb-4346-82fc-8f02a469d45b)
+
+So, that's my incident response journey in a nutshell. It's all about being prepared, staying vigilant, and taking swift and decisive action when needed.
