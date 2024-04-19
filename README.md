@@ -34,7 +34,7 @@ SecurityIncident (Sentinel Incidents): 241
 NSG Inbound Malicious Flows Allowed: 1898
 ![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/65117322-abdb-4cf4-a618-e6a1076b3be3)
 
-## Break down of my incident response process:
+# Break down of my incident response process:
 
 While Azure provides fantastic automation tools that can simplify many incident response tasks, it's valuable to practice manual incident handling to refine my skills in dealing with various scenarios.
 
