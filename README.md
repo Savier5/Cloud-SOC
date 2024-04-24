@@ -64,3 +64,10 @@ Finally, in Step 4, it's all about documentation and closure. I documented my fi
 
 So, that's my incident response journey in a nutshell. It's all about being prepared, staying vigilant, and taking swift and decisive action when needed.
 
+# Secure Cloud Configuration: Achieving Regulatory Compliance (Enabling NIST 800-53):
+
+
+Having thoroughly examined the MDC Secure Score and recommendations, I proceeded to enable MDC Regulatory Compliance. Next, I compared the NIST 800-53 standards with the recommendations provided by MDC.
+
+In the subsequent video, I will be diving into the implementation of SC-7. While this step could potentially stretch out due to the necessity of convening change advisory board (CAB) meetings and undergoing comprehensive change management procedures, I've taken the liberty to expedite the process for the sake of our demonstration.
+
