@@ -66,8 +66,24 @@ So, that's my incident response journey in a nutshell. It's all about being prep
 
 # Secure Cloud Configuration: Achieving Regulatory Compliance (Enabling NIST 800-53):
 
+Having thoroughly examined the MDC Secure Score and recommendations, I proceeded to enable MDC Regulatory Compliance. Next, I compared the NIST 800-53 standards with the recommendations provided by MDC. I started looking at things that I wanted to remediate and begin with SC. System and Communications Protection, specifically, SC-7.
 
-Having thoroughly examined the MDC Secure Score and recommendations, I proceeded to enable MDC Regulatory Compliance. Next, I compared the NIST 800-53 standards with the recommendations provided by MDC.
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/07bfdf22-0dd9-478e-b6a4-7781d4613a47)
 
-In the subsequent video, I will be diving into the implementation of SC-7. While this step could potentially stretch out due to the necessity of convening change advisory board (CAB) meetings and undergoing comprehensive change management procedures, I've taken the liberty to expedite the process for the sake of our demonstration.
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/9b91be16-8932-412a-8be8-c71f7f2c3487)
 
+I started with configuring the private link for the Key Vaults. In Key Vault, I went to the Firewall and disabled the public access, as that was set to **Allow public access from all networks**.
+
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/1cb3a453-3247-4cfa-aa4c-acd02fdc67a2)
+
+Then, I started configuring the private endpoint connections by creating one and setting up the settings. Private endpoint connections in Azure Key Vault enable you to securely access your key vault from your Azure Virtual Network (VNet) without exposing it to the public internet. This enhances the security posture of your key vault by restricting access to only the resources within your VNet or on-premises network that are allowed to communicate with the key vault. When you create a private endpoint connection for your Azure Key Vault, it creates a private IP address in your VNet that acts as an entry point for accessing the key vault. This private IP address is then mapped to the Key Vault service. Requests sent to this private IP address are routed through the Azure backbone network, ensuring secure and private communication between your VNet and the Key Vault service. By using private endpoint connections, you can meet compliance requirements and improve security by keeping your key vault resources isolated within your private network, minimizing exposure to potential threats from the public internet.
+
+I tested to see if the Private Endpoint was working by going into my Windows VM and opening a PowerShell. From there, I did an NSLOOKUP of my Key Vault address. I saw that the Private Endpoint is working, not because it's resolving to exactly "10.0.0.6", but because it is resolving to a private IP address within our Subnet's range. 
+
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/f29b7db2-9aeb-4230-b7e0-b181f0619a1d)
+
+I tried to do it from my host computer and it gave me a public IP Address:
+
+![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/b32de8e6-7c50-4a5f-8ff7-c1706c79f04a)
+
+For the next one, I started working on the Storage account, completing similar steps and kept going, securing all the things that it showed needed to be secured.
