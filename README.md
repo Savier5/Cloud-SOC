@@ -86,4 +86,23 @@ I tried to do it from my host computer and it gave me a public IP Address:
 
 ![image](https://github.com/Savier5/Running-Insecure-Environment-for-24-Hours-and-Capture-Analytics/assets/55478673/b32de8e6-7c50-4a5f-8ff7-c1706c79f04a)
 
-For the next one, I started working on the Storage account, completing similar steps and kept going, securing all the things that it showed needed to be secured.
+For the next one, I started working on the Storage account, completing similar steps and kept going, securing all the things that it showed needed to be secured. I did only a few more after that. Here are the results:
+
+## Before Securing Environment:
+| Start Time | Stop Time | Security Events (Windows VMs) | Syslog (Linux VMs) | SecurityAlert (Microsoft Defender for Cloud) | SecurityIncident (Sentinel Incidents) | NSG Inbound Malicious Flows Allowed |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2024-04-11T00\:42\:16.7427788Z | 2024-04-12T00\:42\:16.7427788Z | 121420 | 3407 | 6 | 241 | 1898 |
+
+## After Securing Environment:
+| Start Time | Stop Time | Security Events (Windows VMs) | Syslog (Linux VMs) | SecurityAlert (Microsoft Defender for Cloud) | SecurityIncident (Sentinel Incidents) | NSG Inbound Malicious Flows Allowed |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2024-04-13T00\:42\:16.2815722Z | 2024-04-14T00\:42\:16.2815722Z | 85725 | 0 | 0 | 0 | 18 |
+	
+## Results:	
+| | Change after security environment |
+| --- | --- |
+| Security Events (Windows VMs) | -29.40% |
+| Syslog (Linux VMs) | -100.00% |
+| SecurityAlert (Microsoft Defender for Cloud) | -100.00% |
+| Security Incident (Sentinel Incidents) | -100.00% |
+| NSG Inbound Malicious Flows Allowed | -99.05% |
